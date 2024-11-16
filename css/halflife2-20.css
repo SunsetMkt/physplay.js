@@ -61,12 +61,12 @@ ul ul li {
     width: 0px;
     height: 0px;
     visibility: hidden;
-    background-image: url("/images/halflife220/gravgun-outline.png"),
-        url("/images/halflife220/gravgun-inset.png"),
-        url("/images/halflife220/gravgun-inset-hover.png"),
-        url("/images/halflife220/gravgun-hover.png"),
-        url("/images/halflife220/gravgun_vm_open.png"),
-        url("/images/halflife220/gravgun_vm_close.png"), url();
+    background-image: url("/images/physplay/gravgun-outline.png"),
+        url("/images/physplay/gravgun-inset.png"),
+        url("/images/physplay/gravgun-inset-hover.png"),
+        url("/images/physplay/gravgun-hover.png"),
+        url("/images/physplay/gravgun_vm_open.png"),
+        url("/images/physplay/gravgun_vm_close.png"), url();
 }
 
 /* General Styles */
@@ -101,7 +101,7 @@ html {
 
 body {
     font-size: 2.25vw;
-    background-image: url("/images/halflife220/scratches-flat-bg.jpg");
+    background-image: url("/images/physplay/scratches-flat-bg.jpg");
     width: 100%;
     overflow-x: hidden;
 }
@@ -435,7 +435,7 @@ a.button:hover span {
 }
 
 #topvideo .mobile-fallback {
-    background-image: url("/images/halflife220/topvideo-frame.jpg");
+    background-image: url("/images/physplay/topvideo-frame.jpg");
     background-size: auto 100%;
     width: 100%;
 }
@@ -443,7 +443,7 @@ a.button:hover span {
 #topvideo .fog {
     height: 20vw;
     width: 100%;
-    background-image: url("/images/halflife220/ground-fog.png");
+    background-image: url("/images/physplay/ground-fog.png");
     z-index: 9000;
     background-size: auto 100%;
     background-repeat: repeat-x;
@@ -462,7 +462,7 @@ a.button:hover span {
     top: 20%;
 }
 #toplogo .logo-mask {
-    mask-image: url("/images/halflife220/hl2-logo-mask.png");
+    mask-image: url("/images/physplay/hl2-logo-mask.png");
     mask-size: contain;
     mask-position: center;
     mask-repeat: no-repeat;
@@ -471,7 +471,7 @@ a.button:hover span {
     height: 100%;
 }
 #toplogo .logotype {
-    background-image: url("/images/halflife220/hl2-logotype.png?version=2");
+    background-image: url("/images/physplay/hl2-logotype.png?version=2");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -480,7 +480,7 @@ a.button:hover span {
     height: 100%;
 }
 #toplogo .radial-blur {
-    background-image: url("/images/halflife220/radial-blur.png");
+    background-image: url("/images/physplay/radial-blur.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -840,7 +840,7 @@ section#fixes {
     width: 100%;
     position: relative;
     margin-top: -7em;
-    background-image: url("/images/halflife220/bottom_vignette.png");
+    background-image: url("/images/physplay/bottom_vignette.png");
     background-position: bottom center;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -1292,7 +1292,7 @@ div.block {
 }
 
 .gravgunimage {
-    background-image: url("/images/halflife220/gravgun-outline.png");
+    background-image: url("/images/physplay/gravgun-outline.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1306,16 +1306,16 @@ div.block {
 
 #gravgun.gravgunEquipped .gravgunimage,
 #gravgun .gravgunimage.equipped {
-    background-image: url("/images/halflife220/gravgun-inset.png");
+    background-image: url("/images/physplay/gravgun-inset.png");
 }
 
 #gravgun.gravgunEquipped .gravgunimage:hover,
 #gravgun .gravgunimage.equipped:hover {
-    background-image: url("/images/halflife220/gravgun-inset-hover.png");
+    background-image: url("/images/physplay/gravgun-inset-hover.png");
 }
 
 .gravgunimage:hover {
-    background-image: url("/images/halflife220/gravgun-hover.png");
+    background-image: url("/images/physplay/gravgun-hover.png");
     transition-duration: 0ms;
 }
 
@@ -1349,7 +1349,7 @@ div.block {
 }
 
 body.physGravGunMessage .gravgunimage {
-    background-image: url("/images/halflife220/gravgun-hover.png");
+    background-image: url("/images/physplay/gravgun-hover.png");
     transition-duration: 0ms;
 }
 
@@ -1507,7 +1507,7 @@ body.physGravGunMessage .gravgunimage {
 
 .gravgunHeld::after {
     content: "";
-    background-image: url("/images/halflife220/gravgun_vm_close.png");
+    background-image: url("/images/physplay/gravgun_vm_close.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
@@ -1520,7 +1520,7 @@ body.physGravGunMessage .gravgunimage {
 }
 
 .gravgunHeld.hoveringOverItem::after {
-    background-image: url("/images/halflife220/gravgun_vm_open.png");
+    background-image: url("/images/physplay/gravgun_vm_open.png");
 }
 
 #crowbar3 {
@@ -1540,7 +1540,7 @@ body.physGravGunMessage .gravgunimage {
     height: var(--crowbar-height);
     width: var(--width);
     min-width: var(--width);
-    background-image: url("/images/halflife220/crowbar-background.png");
+    background-image: url("/images/physplay/crowbar-background.png");
     background-size: auto var(--crowbar-height);
     background-position-x: right;
     background-position-y: top;
@@ -1606,11 +1606,11 @@ body.physGravGunMessage .gravgunimage {
     margin-top: 5em;
 }
 #gordon-alyx .bg {
-    background-image: url("/images/halflife220/gordon-alyx-background.jpg");
+    background-image: url("/images/physplay/gordon-alyx-background.jpg");
     mix-blend-mode: multiply;
 }
 #gordon-alyx .fg {
-    background-image: url("/images/halflife220/gordon-alyx.png");
+    background-image: url("/images/physplay/gordon-alyx.png");
     position: absolute;
     top: 0;
     left: 0;
@@ -1624,7 +1624,7 @@ body.physGravGunMessage .gravgunimage {
     left: 0;
     right: 0;
     margin-inline: auto;
-    background-image: url("/images/halflife220/combine-wall.png"),
+    background-image: url("/images/physplay/combine-wall.png"),
         linear-gradient(
             0deg,
             rgba(255, 255, 255, 0) 0%,
@@ -1696,7 +1696,7 @@ body.physGravGunMessage .gravgunimage {
     border-top-right-radius: 0.5em;
 }
 .tab .logo {
-    background-image: url("/images/halflife220/logo-mark-hl2.png");
+    background-image: url("/images/physplay/logo-mark-hl2.png");
     background-position: -0.3em -0.15em;
     background-repeat: no-repeat;
     background-size: 97%;
@@ -2031,7 +2031,7 @@ body:not(.showSoundDebugUI) #sounddebug {
     position: absolute;
     bottom: 0;
     left: calc(var(--trash-width) * (-0.6));
-    background-image: url("/images/halflife220/trashcan.png");
+    background-image: url("/images/physplay/trashcan.png");
     background-size: contain;
     background-position-x: center;
     background-position-y: bottom;

@@ -1,89 +1,89 @@
 const soundEffectInfo = {
     // Gravity gun
     holdloop: {
-        path: "/images/halflife220/Audio/physcannon_hold_loop.mp3",
+        path: "/images/physplay/Audio/physcannon_hold_loop.mp3",
         volume: 0.2,
         loop: true,
     },
     select: {
-        path: "/images/halflife220/Audio/physcannon_select.mp3",
+        path: "/images/physplay/Audio/physcannon_select.mp3",
         volume: 0.3,
     },
     weaponswitch: {
-        path: "/images/halflife220/Audio/physcannon_return.mp3",
+        path: "/images/physplay/Audio/physcannon_return.mp3",
         volume: 0.3,
     },
     pickup: {
-        path: "/images/halflife220/Audio/physcannon_pickup.mp3",
+        path: "/images/physplay/Audio/physcannon_pickup.mp3",
         volume: 0.3,
     },
     open: {
-        path: "/images/halflife220/Audio/physcannon_claws_open.mp3",
+        path: "/images/physplay/Audio/physcannon_claws_open.mp3",
         volume: 0.3,
         stops: ["close"],
     },
     close: {
-        path: "/images/halflife220/Audio/physcannon_claws_close.mp3",
+        path: "/images/physplay/Audio/physcannon_claws_close.mp3",
         volume: 0.3,
         stops: ["open"],
     },
     drop: {
-        path: "/images/halflife220/Audio/physcannon_drop.mp3",
+        path: "/images/physplay/Audio/physcannon_drop.mp3",
         volume: 0.3,
     },
     dryfire: {
-        path: "/images/halflife220/Audio/physcannon_dryfire.mp3",
+        path: "/images/physplay/Audio/physcannon_dryfire.mp3",
         volume: 0.3,
     },
 
     // Combine
     pickupthecan: {
         paths: [
-            "/images/halflife220/Audio/pickupthecan1.mp3",
-            "/images/halflife220/Audio/pickupthecan2.mp3",
-            "/images/halflife220/Audio/pickupthecan3.mp3",
+            "/images/physplay/Audio/pickupthecan1.mp3",
+            "/images/physplay/Audio/pickupthecan2.mp3",
+            "/images/physplay/Audio/pickupthecan3.mp3",
         ],
         volume: 0.1,
     },
     putitinthetrash: {
         paths: [
-            "/images/halflife220/Audio/putitinthetrash1.mp3",
-            "/images/halflife220/Audio/putitinthetrash2.mp3",
+            "/images/physplay/Audio/putitinthetrash1.mp3",
+            "/images/physplay/Audio/putitinthetrash2.mp3",
         ],
         volume: 0.1,
         stops: ["pickupthecan"],
     },
     allrightyoucango: {
-        path: "/images/halflife220/Audio/allrightyoucango.mp3",
+        path: "/images/physplay/Audio/allrightyoucango.mp3",
         volume: 0.1,
         stops: ["pickupthecan", "putitinthetrash"],
     },
     chuckle: {
-        path: "/images/halflife220/Audio/chuckle.mp3",
+        path: "/images/physplay/Audio/chuckle.mp3",
         volume: 0.08,
     },
     /** 
     help: {
-        path: "/images/halflife220/Audio/help.mp3",
+        path: "/images/physplay/Audio/help.mp3",
         volume: 0.22,
         delay: 150, // ms
     },
 
     // Advisor
     advisor: {
-        path: "/images/halflife220/Audio/AdvisorScreenVx03.mp3",
+        path: "/images/physplay/Audio/AdvisorScreenVx03.mp3",
         volume: 0.2,
     },
 
     // Zombie
     zombie: {
-        path: "/images/halflife220/Audio/zombie_die2.mp3",
+        path: "/images/physplay/Audio/zombie_die2.mp3",
         volume: 0.2,
     },
 
     // Antlion
     antlion: {
-        path: "/images/halflife220/Audio/antlion_pain1.mp3",
+        path: "/images/physplay/Audio/antlion_pain1.mp3",
         volume: 0.2,
     },
     */
