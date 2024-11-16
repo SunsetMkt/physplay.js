@@ -62,6 +62,7 @@ const soundEffectInfo = {
         path: "/images/halflife220/Audio/chuckle.mp3",
         volume: 0.08,
     },
+    /** 
     help: {
         path: "/images/halflife220/Audio/help.mp3",
         volume: 0.22,
@@ -85,6 +86,7 @@ const soundEffectInfo = {
         path: "/images/halflife220/Audio/antlion_pain1.mp3",
         volume: 0.2,
     },
+    */
 };
 
 class CSoundEffectState {
