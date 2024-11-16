@@ -247,13 +247,3 @@ class CSoundEffects {
 }
 
 window.soundEffects = new CSoundEffects();
-
-window.addEventListener(
-    "scroll",
-    () => {
-        // There's a bizarre bug where many subsequent reloads causes the
-        // non-x-scrollable page to creep rightwards. Fix this on reload.
-        window.scrollTo(0, window.scrollY);
-    },
-    { once: true }
-);
