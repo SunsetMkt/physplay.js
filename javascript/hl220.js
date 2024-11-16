@@ -1,21 +1,4 @@
 
-jQuery(document).ready(function($) {
-
-	var $selected = $('.videoswitcher .selected');
-	var $selectedLink = $('.videoselector .selected');
-	
-	$('.videoselector>div').on("click", function() {
-		var target = $(this).data('video');
-		console.log($selected);
-		$selected.removeClass("selected");
-		$selectedLink.removeClass("selected");
-		$selected = $("#" + target);
-		$selected.addClass("selected");
-		$selectedLink = $(this);
-		$selectedLink.addClass("selected");
-	});
-});
-
 const soundEffectInfo = {
 	// Gravity gun
 	"holdloop": {
