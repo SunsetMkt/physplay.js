@@ -1,18 +1,72 @@
-blockquote,body,dd,dl,figure,h1,h2,h3,h4,p{margin:0}ol[role=list],ul[role=list]{list-style:none}html:focus-within{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}a:not([class]){text-decoration-skip-ink:auto}/*img,picture{max-width:100%;display:block}*/button,input,select,textarea{font:inherit}@media (prefers-reduced-motion:reduce){html:focus-within{scroll-behavior:auto}*,::after,::before{animation-duration:0s;animation-iteration-count:1;transition-duration:0s;scroll-behavior:auto!important}}ul,ul li,ul ul li{margin:0;padding:0;text-indent:0}
-*, ::after, ::before { box-sizing: border-box; }
+blockquote,
+body,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+ol[role="list"],
+ul[role="list"] {
+    list-style: none;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+} /*img,picture{max-width:100%;display:block}*/
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *,
+    ::after,
+    ::before {
+        animation-duration: 0s;
+        animation-iteration-count: 1;
+        transition-duration: 0s;
+        scroll-behavior: auto !important;
+    }
+}
+ul,
+ul li,
+ul ul li {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
 
 #preloadImages {
-	width: 0px;
-	height: 0px;
-	visibility: hidden;
-    background-image:
-		url('/images/halflife220/gravgun-outline.png'),
-    	url('/images/halflife220/gravgun-inset.png'),
-    	url('/images/halflife220/gravgun-inset-hover.png'),
-    	url('/images/halflife220/gravgun-hover.png'),
-    	url('/images/halflife220/gravgun_vm_open.png'),
-    	url('/images/halflife220/gravgun_vm_close.png'),
-		url();
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+    background-image: url("/images/halflife220/gravgun-outline.png"),
+        url("/images/halflife220/gravgun-inset.png"),
+        url("/images/halflife220/gravgun-inset-hover.png"),
+        url("/images/halflife220/gravgun-hover.png"),
+        url("/images/halflife220/gravgun_vm_open.png"),
+        url("/images/halflife220/gravgun_vm_close.png"), url();
 }
 
 /* General Styles */
@@ -24,7 +78,7 @@ blockquote,body,dd,dl,figure,h1,h2,h3,h4,p{margin:0}ol[role=list],ul[role=list]{
     --inverted-bg: #000;
     --text: #000;
     --text-inverted: #fff;
-    --accent: #FF862C;
+    --accent: #ff862c;
     --padding-side: 4vw;
     --width-min-content: 700px;
     --width-min-content-1: 701px;
@@ -35,19 +89,19 @@ blockquote,body,dd,dl,figure,h1,h2,h3,h4,p{margin:0}ol[role=list],ul[role=list]{
     --blockpad: 1.6em;
     --mainpadtop: 4em;
     --width-wall-max: 1190px;
-	--crowbar-height: 30em;
-	--crowbar-left-margin: 15em;
-	--trash-height: 250px;
-	--trash-width: calc(234 / 328 * var(--trash-height));
+    --crowbar-height: 30em;
+    --crowbar-left-margin: 15em;
+    --trash-height: 250px;
+    --trash-width: calc(234 / 328 * var(--trash-height));
 }
 
 html {
-	height: 100%;
+    height: 100%;
 }
 
 body {
     font-size: 2.25vw;
-    background-image: url('/images/halflife220/scratches-flat-bg.jpg');
+    background-image: url("/images/halflife220/scratches-flat-bg.jpg");
     width: 100%;
     overflow-x: hidden;
 }
@@ -62,14 +116,17 @@ body.nocursor a {
     /* pointer-events: none; */
 }
 
-
-
 .pad {
     padding-left: var(--padding-side);
     padding-right: var(--padding-side);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     position: relative;
     text-transform: uppercase;
     line-height: 1.2em;
@@ -112,19 +169,18 @@ h6 {
 body,
 input,
 textarea,
-button
-{
-	font-family: "din", -apple-system, system, sans-serif;
+button {
+    font-family: "din", -apple-system, system, sans-serif;
 }
 body.vi p,
 body.vi ul,
 body.vi .label,
-body.vi a
-{
-	font-family: -apple-system, system, sans-serif;
+body.vi a {
+    font-family: -apple-system, system, sans-serif;
 }
 
-.vn p, .vn ul {
+.vn p,
+.vn ul {
     font-family: sans-serif;
 }
 section p {
@@ -138,14 +194,18 @@ section ul li {
     margin-bottom: 0.6em;
 }
 
-.shadow, .gridrow img, .gridrow video {
-    box-shadow: 0.3em 0.3em 1.1em 0em rgba(0,0,0,0.4);
+.shadow,
+.gridrow img,
+.gridrow video {
+    box-shadow: 0.3em 0.3em 1.1em 0em rgba(0, 0, 0, 0.4);
 }
-.gridrow img.noshadow, .gridrow video.noshadow {
+.gridrow img.noshadow,
+.gridrow video.noshadow {
     box-shadow: none;
 }
 
-.gridrow img, .gridrow video {
+.gridrow img,
+.gridrow video {
     margin-bottom: 1em;
 }
 
@@ -172,9 +232,7 @@ section ul li {
 .gridrow.col5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
 }
-@media (min-width: 1200px)
-{
-
+@media (min-width: 1200px) {
 }
 .gridrow.middle {
     align-items: center;
@@ -223,7 +281,7 @@ section video {
     position: relative;
 }
 #maincontent::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 0;
@@ -237,9 +295,10 @@ section video {
     margin-left: auto;
     margin-right: auto;
 }
-#maincontent section, .mg section {
+#maincontent section,
+.mg section {
     padding-top: 0;
-    padding-bottom: 1.0em;
+    padding-bottom: 1em;
     margin-bottom: 1.5em;
 }
 #maincontent section.noborder {
@@ -257,7 +316,8 @@ section video {
     margin-bottom: 0;
 }
 
-#maincontent h2, .mg h2 {
+#maincontent h2,
+.mg h2 {
     color: var(--accent);
     margin-bottom: 0.8em;
 }
@@ -269,7 +329,8 @@ h3 {
     margin-bottom: 1em;
     padding-top: 0.28em;
 }
-#maincontent p, .mg p {
+#maincontent p,
+.mg p {
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -286,7 +347,7 @@ body {
 a.button {
     display: inline-block;
     background-color: var(--accent);
-    font-family: 'Roboto', monospace;
+    font-family: "Roboto", monospace;
     text-transform: uppercase;
     font-size: 125%;
     padding: 0.8em 1.3em 0.7em;
@@ -314,9 +375,8 @@ a.button span {
     color: var(--text);
 }
 
-a.button::before
-{
-    content: '';
+a.button::before {
+    content: "";
     position: absolute;
     display: block;
     width: 120%;
@@ -328,8 +388,7 @@ a.button::before
     transform: skew(-33deg, 0) translate(-110%);
     transition: transform 300ms;
 }
-a.button:hover::before
-{
+a.button:hover::before {
     transform: skew(-33deg, 0) translate(-10%);
 }
 a.button:hover span {
@@ -348,19 +407,26 @@ a.button:hover span {
     pointer-events: none;
 }
 
-#topvideo, #topvideo video, #topvideo .mobile-fallback {
+#topvideo,
+#topvideo video,
+#topvideo .mobile-fallback {
     height: 60vw;
     max-height: 1000px;
 }
-#topvideo, #topvideo .fog {
+#topvideo,
+#topvideo .fog {
     width: 100%;
 }
 
-#topvideo, #topvideo video, #topvideo .mobile-fallback, #topvideo .fog {
+#topvideo,
+#topvideo video,
+#topvideo .mobile-fallback,
+#topvideo .fog {
     position: relative;
 }
 
-#topvideo video, #topvideo .mobile-fallback {
+#topvideo video,
+#topvideo .mobile-fallback {
     width: auto;
     z-index: 5000;
     position: absolute;
@@ -368,9 +434,8 @@ a.button:hover span {
     transform: translateX(-50%);
 }
 
-
 #topvideo .mobile-fallback {
-    background-image: url('/images/halflife220/topvideo-frame.jpg');
+    background-image: url("/images/halflife220/topvideo-frame.jpg");
     background-size: auto 100%;
     width: 100%;
 }
@@ -378,7 +443,7 @@ a.button:hover span {
 #topvideo .fog {
     height: 20vw;
     width: 100%;
-    background-image: url('/images/halflife220/ground-fog.png');
+    background-image: url("/images/halflife220/ground-fog.png");
     z-index: 9000;
     background-size: auto 100%;
     background-repeat: repeat-x;
@@ -397,7 +462,7 @@ a.button:hover span {
     top: 20%;
 }
 #toplogo .logo-mask {
-    mask-image: url('/images/halflife220/hl2-logo-mask.png');
+    mask-image: url("/images/halflife220/hl2-logo-mask.png");
     mask-size: contain;
     mask-position: center;
     mask-repeat: no-repeat;
@@ -406,7 +471,7 @@ a.button:hover span {
     height: 100%;
 }
 #toplogo .logotype {
-    background-image: url('/images/halflife220/hl2-logotype.png?version=2');
+    background-image: url("/images/halflife220/hl2-logotype.png?version=2");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -415,20 +480,20 @@ a.button:hover span {
     height: 100%;
 }
 #toplogo .radial-blur {
-    background-image: url('/images/halflife220/radial-blur.png');
+    background-image: url("/images/halflife220/radial-blur.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     width: 200%;
     height: 200%;
-    opacity: .25;
+    opacity: 0.25;
 }
 
 body:not(.physGunEquipped) #toplogo:not(.extracted) {
-	pointer-events: none !important;
+    pointer-events: none !important;
 }
 
-@media screen and (max-width: 700px ) {
+@media screen and (max-width: 700px) {
     #toplogo {
         top: 18%;
     }
@@ -450,7 +515,9 @@ body:not(.physGunEquipped) #toplogo:not(.extracted) {
 #lauds {
     margin-top: 2em;
 }
-#lauds, #lauds .carousel, #lauds .flickity-viewport {
+#lauds,
+#lauds .carousel,
+#lauds .flickity-viewport {
     height: 13em;
 }
 
@@ -487,89 +554,91 @@ body:not(.physGunEquipped) #toplogo:not(.extracted) {
     margin-right: -0.2em;
     margin-top: -0.1em;
 }
-    .jp #invite h2, .ko #invite h2 {
-        margin-top: 0.4em;
-    }
-    .ru #invite h2 {
-        margin-top: 0.2em;
-    }
-    .chinese #invite h2 {
-        margin-top: 0.1em;
-    }
-    .es #invite h2, .bg #invite h2 {
-        font-size: 2em;
-        margin-top: 0.2em;
-    }
-    .pt-br #invite h3 {
-        letter-spacing: 0.1em;
-    }
-    .da #invite h1 {
-        font-size: 4.1em;
-    }
-    .da #invite h2 {
-        font-size: 2.0em;
-        margin-top: 0.3em;
-    }
-    .nl #invite h2 {
-        font-size: 2.1em;
-        letter-spacing: 0.12em;
-    }
-    .el #invite h3 {
-        font-size: 1.45em;
-        letter-spacing: 0.1em;
-    }
-    .el #invite h2 {
-        font-size: 2.25em;
-        letter-spacing: 0.1em;
-    }
-    .hu #invite h2 {
-        margin-top: 0.2em;
-        font-size: 2.43em;
-    }
-    .it #invite h2 {
-        font-size: 2em;
-        letter-spacing: 0.1em;
-        margin-top: 0.2em;
-    }
-    .ro #invite h2 {
-        font-size: 2.1em;
-        letter-spacing: 0em;
-        margin-top: 0.3em;
-    }
-    .sv #invite h2 {
-        font-size: 2.3em;
-        letter-spacing: 0.1em;
-        margin-top: 0.2em;
-    }
-    .th #invite h2 {
-        font-size: 2.5em;
-    }
-    .tr #invite h3 {
-        font-size: 1.5em;
-        letter-spacing: 0.19em;
-    }
-    .tr #invite h2 {
-        font-size: 2.55em;
-        letter-spacing: 0.1em;
-        margin-top: 0.2em;
-    }
-    .vn #invite h2 {
-        font-size: 2.23em;
-        margin-top: 0.2em;
-    }
-    .id #invite h2 {
-        font-size: 2.37em;
-        margin-top: 0.1em;
-    }
-    .id #invite h3 {
-        letter-spacing: 0.145em;
-    }
-    .uk #invite h2 {
-        font-size: 2.18em;
-        letter-spacing: 0.05em;
-        margin-right: -0.1em;
-        margin-top: 0.2em;
-    }
+.jp #invite h2,
+.ko #invite h2 {
+    margin-top: 0.4em;
+}
+.ru #invite h2 {
+    margin-top: 0.2em;
+}
+.chinese #invite h2 {
+    margin-top: 0.1em;
+}
+.es #invite h2,
+.bg #invite h2 {
+    font-size: 2em;
+    margin-top: 0.2em;
+}
+.pt-br #invite h3 {
+    letter-spacing: 0.1em;
+}
+.da #invite h1 {
+    font-size: 4.1em;
+}
+.da #invite h2 {
+    font-size: 2em;
+    margin-top: 0.3em;
+}
+.nl #invite h2 {
+    font-size: 2.1em;
+    letter-spacing: 0.12em;
+}
+.el #invite h3 {
+    font-size: 1.45em;
+    letter-spacing: 0.1em;
+}
+.el #invite h2 {
+    font-size: 2.25em;
+    letter-spacing: 0.1em;
+}
+.hu #invite h2 {
+    margin-top: 0.2em;
+    font-size: 2.43em;
+}
+.it #invite h2 {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    margin-top: 0.2em;
+}
+.ro #invite h2 {
+    font-size: 2.1em;
+    letter-spacing: 0em;
+    margin-top: 0.3em;
+}
+.sv #invite h2 {
+    font-size: 2.3em;
+    letter-spacing: 0.1em;
+    margin-top: 0.2em;
+}
+.th #invite h2 {
+    font-size: 2.5em;
+}
+.tr #invite h3 {
+    font-size: 1.5em;
+    letter-spacing: 0.19em;
+}
+.tr #invite h2 {
+    font-size: 2.55em;
+    letter-spacing: 0.1em;
+    margin-top: 0.2em;
+}
+.vn #invite h2 {
+    font-size: 2.23em;
+    margin-top: 0.2em;
+}
+.id #invite h2 {
+    font-size: 2.37em;
+    margin-top: 0.1em;
+}
+.id #invite h3 {
+    letter-spacing: 0.145em;
+}
+.uk #invite h2 {
+    font-size: 2.18em;
+    letter-spacing: 0.05em;
+    margin-right: -0.1em;
+    margin-top: 0.2em;
+}
 sup {
     font-size: 0.6em;
     vertical-align: 0.7em;
@@ -602,13 +671,13 @@ sup {
 }
 
 #interviews a {
-	color: #fff;
+    color: #fff;
 }
 
 #deckvideo {
     width: 109%;
     margin-left: -4%;
-	margin-bottom: -2em;
+    margin-bottom: -2em;
 }
 
 section#scaling .gridrow > div {
@@ -623,7 +692,7 @@ section .row1 {
     margin-bottom: 1.5em;
 }
 
-@media screen and (min-width: 701px ) {
+@media screen and (min-width: 701px) {
     #maincontent section#graphics {
         padding-bottom: 3em;
     }
@@ -638,7 +707,7 @@ section#fixes {
 }
 
 #fixes ul {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     color: var(--bg-light);
     padding-top: 1em;
     margin-left: 2em;
@@ -685,26 +754,24 @@ section#fixes {
     display: block;
 }
 
-.youtube-container
-{
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
-	max-width: 100%;
+.youtube-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
 }
 .youtube-container iframe,
 .youtube-container object,
-.youtube-container embed
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+.youtube-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-@media screen and ( max-width: 700px ) {
+@media screen and (max-width: 700px) {
     body {
         font-size: 4vw;
     }
@@ -728,7 +795,6 @@ section#fixes {
     }
     #maincontent h2,
     #maincontent h3 {
-
     }
 
     .gridrow {
@@ -764,7 +830,6 @@ section#fixes {
     }
 }
 
-
 #maincontent {
     margin-left: auto;
     margin-right: auto;
@@ -775,7 +840,7 @@ section#fixes {
     width: 100%;
     position: relative;
     margin-top: -7em;
-    background-image: url('/images/halflife220/bottom_vignette.png');
+    background-image: url("/images/halflife220/bottom_vignette.png");
     background-position: bottom center;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -793,11 +858,13 @@ section#fixes {
     max-height: 195px;
 }
 
-a img, .thumbnaillink {
+a img,
+.thumbnaillink {
     transition-property: filter;
     transition-duration: 0.2s;
 }
-body:not(.nocursor) a img:hover, body:not(.nocursor) .thumbnaillink:hover {
+body:not(.nocursor) a img:hover,
+body:not(.nocursor) .thumbnaillink:hover {
     filter: brightness(1.2);
 }
 
@@ -808,10 +875,10 @@ footer.main_footer ul.footer_game_nav li h3 {
 }
 
 footer.main_footer .main_footer_inner_wrapper {
-	width: 100%;
-	margin: 0 auto;
-	max-width: 1200px;
-	position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
     background-color: var(--inverted-bg);
     color: var(--text-inverted);
     font-size: 0.9em;
@@ -819,193 +886,158 @@ footer.main_footer .main_footer_inner_wrapper {
     padding-right: 1em;
 }
 
-@media (max-width: 700px)
-{
-	footer.main_footer ul.footer_main_nav
-	{
-		flex-direction: column;
-	}
-	footer.main_footer ul.footer_main_nav > li > ul
-	{
-		height: auto;
-		display: flex;
-		flex-direction: row;
-		width: 93vw;
-	}
-	footer.main_footer ul.footer_main_nav > li > ul > li
-	{
-		width: 55vw;
-		display: inline-block;
-	}
-	footer.main_footer ul.footer_main_nav > li > ul > li:first-child
-	{
-		width: 50vw;
-	}
-	footer.main_footer ul.footer_main_nav > li > ul > li > ul
-	{
-		border-left: 1px solid rgba(255,255,255,0.5);
-		padding-left: 5vw;
-		padding-top: 0;
-		padding-bottom: 0;
-	}
-	footer.main_footer ul.footer_main_nav > li > ul > li > ul.footer_game_nav
-	{
-		padding-bottom: 15vw;
-	}
-	footer.main_footer ul.footer_main_nav > li > ul > li.home
-	{
-		text-align: center;
-	}
-	footer.main_footer ul.footer_main_nav .home a svg#halflife-logo-footer
-	{
-		padding: 9vw 5vw 0 3vw;
-	}
-	footer.main_footer ul.footer_main_nav > li > ul > li.valvesoftware
-	{
-		text-align: center;
-	}
-	footer.main_footer ul.footer_main_nav li ul.footer_valve_nav li.valvemenu
-	{
-		padding-top: 0;
-	}
-	footer.main_footer ul.footer_main_nav .valvesoftware a svg#valve-logo
-	{
-		padding-right: 5vw;
-		padding-left: 5vw;
-	}
-	footer.main_footer ul.footer_main_nav ul.footer_game_nav li.ep1,
-	footer.main_footer ul.footer_main_nav ul.footer_game_nav li.ep2
-	{
-		padding-left: 4vw;
-	}
+@media (max-width: 700px) {
+    footer.main_footer ul.footer_main_nav {
+        flex-direction: column;
+    }
+    footer.main_footer ul.footer_main_nav > li > ul {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        width: 93vw;
+    }
+    footer.main_footer ul.footer_main_nav > li > ul > li {
+        width: 55vw;
+        display: inline-block;
+    }
+    footer.main_footer ul.footer_main_nav > li > ul > li:first-child {
+        width: 50vw;
+    }
+    footer.main_footer ul.footer_main_nav > li > ul > li > ul {
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        padding-left: 5vw;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    footer.main_footer ul.footer_main_nav > li > ul > li > ul.footer_game_nav {
+        padding-bottom: 15vw;
+    }
+    footer.main_footer ul.footer_main_nav > li > ul > li.home {
+        text-align: center;
+    }
+    footer.main_footer ul.footer_main_nav .home a svg#halflife-logo-footer {
+        padding: 9vw 5vw 0 3vw;
+    }
+    footer.main_footer ul.footer_main_nav > li > ul > li.valvesoftware {
+        text-align: center;
+    }
+    footer.main_footer ul.footer_main_nav li ul.footer_valve_nav li.valvemenu {
+        padding-top: 0;
+    }
+    footer.main_footer ul.footer_main_nav .valvesoftware a svg#valve-logo {
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+    footer.main_footer ul.footer_main_nav ul.footer_game_nav li.ep1,
+    footer.main_footer ul.footer_main_nav ul.footer_game_nav li.ep2 {
+        padding-left: 4vw;
+    }
 }
 .footer_valve_nav h3 {
     text-transform: none;
 }
 footer.main_footer {
-	background: var(--inverted-bg);
+    background: var(--inverted-bg);
 }
 
-footer.main_footer .main_footer_inner_wrapper
-{
-	padding-top: 1.5em;
+footer.main_footer .main_footer_inner_wrapper {
+    padding-top: 1.5em;
     padding-bottom: 1.5em;
 }
-footer.main_footer ul li:last-child
-{
-	line-height: 0.8em;
+footer.main_footer ul li:last-child {
+    line-height: 0.8em;
 }
 footer.main_footer ul li a,
-footer.main_footer ul li a:visited
-{
-	color: var(--text-inverted);
-	font-weight: 900;
-	font-size: 0.8em;
-	line-height: 1em;
-	vertical-align: top;
+footer.main_footer ul li a:visited {
+    color: var(--text-inverted);
+    font-weight: 900;
+    font-size: 0.8em;
+    line-height: 1em;
+    vertical-align: top;
     text-decoration: none;
 }
-footer.main_footer ul li a:hover
-{
-	color: var(--page-bg);
+footer.main_footer ul li a:hover {
+    color: var(--page-bg);
 }
-footer.main_footer ul li
-{
-	margin-top: 0;
+footer.main_footer ul li {
+    margin-top: 0;
 
-	vertical-align: top;
+    vertical-align: top;
 }
 
-footer.main_footer .footer_main_nav
-{
-	width: 100%;
-	display: flex;
-	flex-direction: row;
+footer.main_footer .footer_main_nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-footer.main_footer .home a
-{
-	height: 100%;
-	width: 100%;
+footer.main_footer .home a {
+    height: 100%;
+    width: 100%;
 }
 
-footer.main_footer ul
-{
-	list-style: none;
+footer.main_footer ul {
+    list-style: none;
 }
 footer.main_footer ul li,
-footer.main_footer ul
-{
-	display: inline-block;
+footer.main_footer ul {
+    display: inline-block;
 }
-footer.main_footer ul.footer_game_nav
-{
-	border-left: 1px solid rgba(255,255,255,0.5);
-	padding-left: 2.5vw;
-	line-height: 1.2em;
+footer.main_footer ul.footer_game_nav {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding-left: 2.5vw;
+    line-height: 1.2em;
 }
-footer.main_footer ul.footer_game_nav li
-{
-	display: block;
-	margin-bottom: 0;
+footer.main_footer ul.footer_game_nav li {
+    display: block;
+    margin-bottom: 0;
 }
-	footer.main_footer ul.footer_game_nav li:last-child
-	{
-		margin-bottom: 0;
-	}
-	footer.main_footer ul.footer_game_nav li.ep1,
-	footer.main_footer ul.footer_game_nav li.ep2
-	{
-		padding-left: 1vw;
-	}
-footer.main_footer ul.footer_game_nav li a
-{
-	text-transform: uppercase;
+footer.main_footer ul.footer_game_nav li:last-child {
+    margin-bottom: 0;
+}
+footer.main_footer ul.footer_game_nav li.ep1,
+footer.main_footer ul.footer_game_nav li.ep2 {
+    padding-left: 1vw;
+}
+footer.main_footer ul.footer_game_nav li a {
+    text-transform: uppercase;
 }
 
-footer.main_footer .home a svg#halflife-logo-footer
-{
-	fill: var(--text-inverted);
-	height: 7em;
-	padding: 2em 3em 0 4em;
-	transition: fill 200ms;
+footer.main_footer .home a svg#halflife-logo-footer {
+    fill: var(--text-inverted);
+    height: 7em;
+    padding: 2em 3em 0 4em;
+    transition: fill 200ms;
 }
-footer.main_footer .home a:hover svg#halflife-logo-footer
-{
-	fill: var(--page-bg);
+footer.main_footer .home a:hover svg#halflife-logo-footer {
+    fill: var(--page-bg);
 }
 
-footer.main_footer .footer_valve_nav
-{
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 10em;
+footer.main_footer .footer_valve_nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 10em;
 }
-footer.main_footer .footer_valve_nav_wrapper ul li
-{
-	display: block;
-	line-height: 1.2em;
+footer.main_footer .footer_valve_nav_wrapper ul li {
+    display: block;
+    line-height: 1.2em;
 }
 
-footer.main_footer .valvesoftware a svg#valve-logo
-{
-	fill: var(--text-inverted);
-	height: 2.5em;
-	transition: fill 200ms;
+footer.main_footer .valvesoftware a svg#valve-logo {
+    fill: var(--text-inverted);
+    height: 2.5em;
+    transition: fill 200ms;
 }
-footer.main_footer .valvesoftware a:hover svg#valve-logo
-{
-	fill: var(--page-bg);
+footer.main_footer .valvesoftware a:hover svg#valve-logo {
+    fill: var(--page-bg);
 }
 
-footer.main_footer ul.footer_main_nav ul.footer_valve_nav li.valvemenu
-{
-	padding-top: 0.6em;
+footer.main_footer ul.footer_main_nav ul.footer_valve_nav li.valvemenu {
+    padding-top: 0.6em;
 }
-
 
 #bottomgrunge {
     display: block;
@@ -1030,20 +1062,21 @@ video {
     transition: opacity 300ms ease-in-out;
     border: none;
     outline: none;
-  }
-  .lightbox .lb-outerContainer video:hover, .lightbox .lb-outerContainer video:focus {
+}
+.lightbox .lb-outerContainer video:hover,
+.lightbox .lb-outerContainer video:focus {
     border: none;
     outline: none;
-  }
-  .lightbox .lb-outerContainer.animating video {
+}
+.lightbox .lb-outerContainer.animating video {
     opacity: 0;
-  }
-  .lightbox .lb-container {
+}
+.lightbox .lb-container {
     position: relative;
-  }
-  .lightbox .lb-container .lb-image {
+}
+.lightbox .lb-container .lb-image {
     border: none;
-  }
+}
 
 #language-container {
     z-index: 99999;
@@ -1087,7 +1120,7 @@ video {
     padding: 0.4em 0.5em 0.4em 0.5em;
     background-color: var(--inverted-bg);
     border-radius: 0em;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     width: 18em;
     position: fixed;
     z-index: 99999999999;
@@ -1125,7 +1158,7 @@ video {
     color: var(--text);
 }
 #language-dropdown .language-option.current-lang {
-    background-image: url('/images/check-mark.svg');
+    background-image: url("/images/check-mark.svg");
 }
 #language-dropdown #language-close {
     margin-top: 0.2em;
@@ -1148,21 +1181,22 @@ video {
 }
 
 #language-dropdown .menu::-webkit-scrollbar-thumb {
-  background-color: var(--page-bg);
+    background-color: var(--page-bg);
 }
 
 #scrim {
     display: none;
     position: fixed;
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     opacity: 1;
     z-index: 1000;
 }
 
-div.block, section#fixes {
+div.block,
+section#fixes {
     border-radius: 0.5em;
 }
 
@@ -1176,7 +1210,6 @@ div.block {
     margin-bottom: 2em;
     margin-top: 2em;
 }
-
 
 #commentary p img {
     width: 50%;
@@ -1200,13 +1233,13 @@ div.block {
     transition-duration: 0.3s;
     z-index: 1000;
 }
-.videoselector>div {
+.videoselector > div {
     cursor: pointer;
     margin-top: 1em;
     border-top: 4px solid transparent;
     margin-bottom: 0;
 }
-#maincontent .videoselector>div h3 {
+#maincontent .videoselector > div h3 {
     margin-top: 0;
     padding-top: 0.5em;
     border-top: 1px solid var(--text);
@@ -1223,30 +1256,30 @@ div.block {
 }
 
 .youtube-container.physElement.extracted {
-	padding: 0 !important;
-	background: black !important;
+    padding: 0 !important;
+    background: black !important;
 }
 
 .youtube-container.physElement.extractable::after,
 .youtube-container.physElement.extracted::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
-#maincontent .videoselector>div.selected h3 {
+#maincontent .videoselector > div.selected h3 {
     border-color: transparent;
 }
 
-.videoselector>div.selected {
+.videoselector > div.selected {
     border-color: var(--accent);
 }
 
-.videoselector>div.selected h3,
-.videoselector>div:hover h3 {
+.videoselector > div.selected h3,
+.videoselector > div:hover h3 {
     color: var(--accent);
 }
 
@@ -1259,7 +1292,7 @@ div.block {
 }
 
 .gravgunimage {
-    background-image: url('/images/halflife220/gravgun-outline.png');
+    background-image: url("/images/halflife220/gravgun-outline.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1273,108 +1306,192 @@ div.block {
 
 #gravgun.gravgunEquipped .gravgunimage,
 #gravgun .gravgunimage.equipped {
-    background-image: url('/images/halflife220/gravgun-inset.png');
+    background-image: url("/images/halflife220/gravgun-inset.png");
 }
 
 #gravgun.gravgunEquipped .gravgunimage:hover,
 #gravgun .gravgunimage.equipped:hover {
-    background-image: url('/images/halflife220/gravgun-inset-hover.png');
+    background-image: url("/images/halflife220/gravgun-inset-hover.png");
 }
 
 .gravgunimage:hover {
-    background-image: url('/images/halflife220/gravgun-hover.png');
+    background-image: url("/images/halflife220/gravgun-hover.png");
     transition-duration: 0ms;
 }
 
 @keyframes gravgunwiggle {
-	0%, 100% { transform: rotate(   0deg); }
-	10%      { transform: rotate(  10deg); }
-	30%      { transform: rotate( -10deg); }
-	50%      { transform: rotate(  10deg); }
-	70%      { transform: rotate( -10deg); }
-	90%      { transform: rotate(  10deg); }
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(10deg);
+    }
+    30% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    70% {
+        transform: rotate(-10deg);
+    }
+    90% {
+        transform: rotate(10deg);
+    }
 }
 
 .gravgunimage.buttonWiggle {
-	animation-name: gravgunwiggle;
-	animation-duration: 0.5s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: 1;
+    animation-name: gravgunwiggle;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
 }
 
 body.physGravGunMessage .gravgunimage {
-    background-image: url('/images/halflife220/gravgun-hover.png');
+    background-image: url("/images/halflife220/gravgun-hover.png");
     transition-duration: 0ms;
 }
 
 .gravgunHeldContainer {
-	width: 150px;
-	height: 150px;
-	position: fixed;
-	top: -60px;
-	left: -70px;
-	pointer-events: none;
-	z-index: 9002;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    top: -60px;
+    left: -70px;
+    pointer-events: none;
+    z-index: 9002;
 }
 
 .gravgunHeld {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .gravgunHeld:not(.equipped) {
-	display: none;
+    display: none;
 }
 
 @keyframes gravgunRecoil {
-	0%, 100% { transform: rotateZ(0deg) scale(1.00); }
-	10%      { transform: rotateZ(0deg) scale(1.05); }
-    20%      { transform: rotateZ(2deg) scale(1.05); }
-    40%      { transform: rotateZ(-2deg) scale(1.05); }
+    0%,
+    100% {
+        transform: rotateZ(0deg) scale(1);
+    }
+    10% {
+        transform: rotateZ(0deg) scale(1.05);
+    }
+    20% {
+        transform: rotateZ(2deg) scale(1.05);
+    }
+    40% {
+        transform: rotateZ(-2deg) scale(1.05);
+    }
 }
 
 .gravgunHeld.recoil {
-	animation-name: gravgunRecoil;
-	animation-duration: 0.5s;
-	animation-iteration-count: 1;
+    animation-name: gravgunRecoil;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
 }
 
 @keyframes gravgunFlicker {
-	0%, 100% { opacity: calc( ( var(--flicker-min) + ( 0.27 * var(--flicker-magnitude) ) ) * var(--flicker-scalar) ); }
-	08%      { opacity: calc( ( var(--flicker-min) + ( 0.64 * var(--flicker-magnitude) ) ) * var(--flicker-scalar) ); }
-	18%      { opacity: calc( ( var(--flicker-min) + ( 0.27 * var(--flicker-magnitude) ) ) * var(--flicker-scalar) ); }
-	31%      { opacity: calc( ( var(--flicker-min) + ( 1.00 * var(--flicker-magnitude) ) ) * var(--flicker-scalar) ); }
-	35%      { opacity: calc( ( var(--flicker-min) + ( 0.00 * var(--flicker-magnitude) ) ) * var(--flicker-scalar) ); }
-	49%      { opacity: calc( ( var(--flicker-min) + ( 0.55 * var(--flicker-magnitude) ) ) * var(--flicker-scalar) ); }
-	59%      { opacity: calc( ( var(--flicker-min) + ( 0.27 * var(--flicker-magnitude) ) ) * var(--flicker-scalar) ); }
-	56%      { opacity: calc( ( var(--flicker-min) + ( 0.64 * var(--flicker-magnitude) ) ) * var(--flicker-scalar) ); }
-	78%      { opacity: calc( ( var(--flicker-min) + ( 0.09 * var(--flicker-magnitude) ) ) * var(--flicker-scalar) ); }
-	88%      { opacity: calc( ( var(--flicker-min) + ( 0.64 * var(--flicker-magnitude) ) ) * var(--flicker-scalar) ); }
-	92%      { opacity: calc( ( var(--flicker-min) + ( 0.82 * var(--flicker-magnitude) ) ) * var(--flicker-scalar) ); }
+    0%,
+    100% {
+        opacity: calc(
+            (var(--flicker-min) + (0.27 * var(--flicker-magnitude))) *
+                var(--flicker-scalar)
+        );
+    }
+    08% {
+        opacity: calc(
+            (var(--flicker-min) + (0.64 * var(--flicker-magnitude))) *
+                var(--flicker-scalar)
+        );
+    }
+    18% {
+        opacity: calc(
+            (var(--flicker-min) + (0.27 * var(--flicker-magnitude))) *
+                var(--flicker-scalar)
+        );
+    }
+    31% {
+        opacity: calc(
+            (var(--flicker-min) + (1 * var(--flicker-magnitude))) *
+                var(--flicker-scalar)
+        );
+    }
+    35% {
+        opacity: calc(
+            (var(--flicker-min) + (0 * var(--flicker-magnitude))) *
+                var(--flicker-scalar)
+        );
+    }
+    49% {
+        opacity: calc(
+            (var(--flicker-min) + (0.55 * var(--flicker-magnitude))) *
+                var(--flicker-scalar)
+        );
+    }
+    59% {
+        opacity: calc(
+            (var(--flicker-min) + (0.27 * var(--flicker-magnitude))) *
+                var(--flicker-scalar)
+        );
+    }
+    56% {
+        opacity: calc(
+            (var(--flicker-min) + (0.64 * var(--flicker-magnitude))) *
+                var(--flicker-scalar)
+        );
+    }
+    78% {
+        opacity: calc(
+            (var(--flicker-min) + (0.09 * var(--flicker-magnitude))) *
+                var(--flicker-scalar)
+        );
+    }
+    88% {
+        opacity: calc(
+            (var(--flicker-min) + (0.64 * var(--flicker-magnitude))) *
+                var(--flicker-scalar)
+        );
+    }
+    92% {
+        opacity: calc(
+            (var(--flicker-min) + (0.82 * var(--flicker-magnitude))) *
+                var(--flicker-scalar)
+        );
+    }
 }
 
 .gravgunHeld::before {
-	content: '';
-	background: radial-gradient(circle, rgba(255,212,53,1) 0%, rgba(255, 147, 32, 0.6) 10%, rgba(255,140,6,0.3) 38%, rgba(255,132,0,0) 59%);
+    content: "";
+    background: radial-gradient(
+        circle,
+        rgba(255, 212, 53, 1) 0%,
+        rgba(255, 147, 32, 0.6) 10%,
+        rgba(255, 140, 6, 0.3) 38%,
+        rgba(255, 132, 0, 0) 59%
+    );
     z-index: 0;
-	display: block;
-	width: 50px;
-	height: 50px;
-	position: relative;
-	top: 37px;
-	left: 41px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 37px;
+    left: 41px;
     transform: scale(1.8);
-	transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 
-	--flicker-min: 0.75;
-	--flicker-magnitude: 0.25;
-	--flicker-scalar: 0.5;
-	animation-name: gravgunFlicker;
-	animation-duration: 1.4s;
-	animation-iteration-count: infinite;
+    --flicker-min: 0.75;
+    --flicker-magnitude: 0.25;
+    --flicker-scalar: 0.5;
+    animation-name: gravgunFlicker;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
 }
 
 .gravgunHeld.hoveringOverItem::before {
@@ -1385,82 +1502,91 @@ body.physGravGunMessage .gravgunimage {
 .gravgunHeld.holdingItem::before {
     transform: scale(2.5);
     --flicker-scalar: 1;
-	animation-duration: 0.8s;
+    animation-duration: 0.8s;
 }
 
 .gravgunHeld::after {
-	content: '';
-	background-image: url("/images/halflife220/gravgun_vm_close.png");
-	background-size: contain;
+    content: "";
+    background-image: url("/images/halflife220/gravgun_vm_close.png");
+    background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
-	display: block;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .gravgunHeld.hoveringOverItem::after {
-	background-image: url("/images/halflife220/gravgun_vm_open.png");
+    background-image: url("/images/halflife220/gravgun_vm_open.png");
 }
 
 #crowbar3 {
     height: var(--crowbar-height);
 }
 @keyframes crowbarFadeIn {
-	from { opacity: 0; }
-	to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 #crowbar3 .crowbar {
-	--width: calc(var(--crowbar-height) * 2);
-	border: solid 2px transparent;
-	height: var(--crowbar-height);
-	width: var(--width);
-	min-width: var(--width);
-    background-image: url('/images/halflife220/crowbar-background.png');
-	background-size: auto var(--crowbar-height);
-	background-position-x: right;
-	background-position-y: top;
-	background-repeat: no-repeat;
-	position: relative;
-	margin: 0 auto;
-	margin-left: calc(50vw - var(--crowbar-left-margin));
+    --width: calc(var(--crowbar-height) * 2);
+    border: solid 2px transparent;
+    height: var(--crowbar-height);
+    width: var(--width);
+    min-width: var(--width);
+    background-image: url("/images/halflife220/crowbar-background.png");
+    background-size: auto var(--crowbar-height);
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+    margin-left: calc(50vw - var(--crowbar-left-margin));
 
-	transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
 
-	opacity: 0;
-	animation-name: crowbarFadeIn;
-	animation-duration: 0.5s;
-	animation-timing-function: ease-out;
-	animation-delay: 1.0s;
-	animation-iteration-count: 1;
-	animation-fill-mode: both;
+    opacity: 0;
+    animation-name: crowbarFadeIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 #crowbar3 .crowbar.noshadow {
-	opacity: 0 !important;
+    opacity: 0 !important;
 }
 #crowbar3 .crowbar-isolated {
-	width: 6.4em;
-	height: var(--crowbar-height);
-	display: flex;
-	overflow: hidden;
-	position: absolute;
-	top: -0.4em;
-	left: 8.9em;
-	transform: rotate(35deg) scale(1.2);
+    width: 6.4em;
+    height: var(--crowbar-height);
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    top: -0.4em;
+    left: 8.9em;
+    transform: rotate(35deg) scale(1.2);
 }
 #crowbar3 .crowbar-isolated img {
-	margin: auto;
-	height: var(--crowbar-height);
-	width: auto;
-	transform: translate(-6.8em, -0.5em) rotate(-35deg) scale(0.82);
+    margin: auto;
+    height: var(--crowbar-height);
+    width: auto;
+    transform: translate(-6.8em, -0.5em) rotate(-35deg) scale(0.82);
 }
 
 #gordon-alyx {
     position: relative;
-    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 18%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 18%,
+        rgba(255, 255, 255, 1) 100%
+    );
     height: 60em;
 }
 #gordon-alyx,
@@ -1480,11 +1606,11 @@ body.physGravGunMessage .gravgunimage {
     margin-top: 5em;
 }
 #gordon-alyx .bg {
-    background-image: url('/images/halflife220/gordon-alyx-background.jpg');
+    background-image: url("/images/halflife220/gordon-alyx-background.jpg");
     mix-blend-mode: multiply;
 }
 #gordon-alyx .fg {
-    background-image: url('/images/halflife220/gordon-alyx.png');
+    background-image: url("/images/halflife220/gordon-alyx.png");
     position: absolute;
     top: 0;
     left: 0;
@@ -1498,7 +1624,13 @@ body.physGravGunMessage .gravgunimage {
     left: 0;
     right: 0;
     margin-inline: auto;
-    background-image: url('/images/halflife220/combine-wall.png'), linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 26%, rgba(0,0,0,1) 100%);
+    background-image: url("/images/halflife220/combine-wall.png"),
+        linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(0, 0, 0, 1) 26%,
+            rgba(0, 0, 0, 1) 100%
+        );
     background-size: 100% auto, 100% auto;
     background-repeat: no-repeat;
     background-position: bottom, top;
@@ -1525,7 +1657,7 @@ body.physGravGunMessage .gravgunimage {
 #updateincludes .spacer {
     height: 22em;
 }
-@media screen and ( max-width: 1190px ) {
+@media screen and (max-width: 1190px) {
     #gordon-alyx .mg .spacer {
         height: 30vw;
     }
@@ -1552,23 +1684,23 @@ body.physGravGunMessage .gravgunimage {
 }
 .tab.left {
     transform-origin: 0% 0%;
-    left: calc( -1 * var(--blockpad) );
+    left: calc(-1 * var(--blockpad));
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
 }
 .tab.right {
     margin-right: -17.5em;
     transform-origin: top left;
-    right: calc( -1 * var(--blockpad) );
+    right: calc(-1 * var(--blockpad));
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
 }
 .tab .logo {
-    background-image: url('/images/halflife220/logo-mark-hl2.png');
+    background-image: url("/images/halflife220/logo-mark-hl2.png");
     background-position: -0.3em -0.15em;
     background-repeat: no-repeat;
     background-size: 97%;
-    border-right: 0.25em solid #F5F5F5;
+    border-right: 0.25em solid #f5f5f5;
 }
 .tab.right .logo {
     background-position: -0.23em 0.35em;
@@ -1608,13 +1740,13 @@ img.ornament {
     right: -11em;
 }
 .decoration > div {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .decoration .top,
 .decoration .main {
-	/* Prevents size from weirdly growing when children
+    /* Prevents size from weirdly growing when children
 	 * are replaced with a placeholder element during gravgun interaction. */
-	min-width: 0;
+    min-width: 0;
 }
 .decoration .top img {
     height: 1.8em;
@@ -1632,7 +1764,7 @@ img.ornament {
     margin-top: -50%;
 }
 
-@media screen and ( max-width: 1000px ) {
+@media screen and (max-width: 1000px) {
     .decoration {
         display: none;
     }
@@ -1641,12 +1773,12 @@ img.ornament {
 #antlion {
     top: 10em;
 }
-    #antlion video {
-        width: 300%;
-        margin-top: -15%;
-        margin-bottom: -60%;
-        margin-left: -100%;
-    }
+#antlion video {
+    width: 300%;
+    margin-top: -15%;
+    margin-bottom: -60%;
+    margin-left: -100%;
+}
 #advisor video {
     margin-top: 15%;
 }
@@ -1657,17 +1789,16 @@ img.ornament {
     margin-bottom: 5%;
 }
 
-
-@media screen and ( max-width: 860px ) {
+@media screen and (max-width: 860px) {
     .tab {
         display: none;
     }
 }
-@media screen and ( max-width: 700px ) {
-	:root {
-		--crowbar-height: 20em;
-		--crowbar-left-margin: 10em;
-	}
+@media screen and (max-width: 700px) {
+    :root {
+        --crowbar-height: 20em;
+        --crowbar-left-margin: 10em;
+    }
     .contentbox {
         margin-top: -2em;
     }
@@ -1676,17 +1807,18 @@ img.ornament {
         padding-left: 0;
         padding-right: 0;
     }
-	#crowbar3 .crowbar-isolated {
-		top: -0.3em;
-		left: 5.1em;
-	}
-	#crowbar3 .crowbar-isolated img {
-		transform: translate(-3.6em, -0.2em) rotate(-35deg) scale(0.82);
-	}
+    #crowbar3 .crowbar-isolated {
+        top: -0.3em;
+        left: 5.1em;
+    }
+    #crowbar3 .crowbar-isolated img {
+        transform: translate(-3.6em, -0.2em) rotate(-35deg) scale(0.82);
+    }
     #maincontent {
         margin-top: -40em;
     }
-    #gordon-alyx .bg, #gordon-alyx .fg {
+    #gordon-alyx .bg,
+    #gordon-alyx .fg {
         height: 30em;
     }
     #gordon-alyx .mg {
@@ -1700,7 +1832,11 @@ img.ornament {
         width: 100%;
         height: 5em;
         margin-top: -4.9em;
-        background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(0, 0, 0, 1) 100%
+        );
     }
     #gordon-alyx .mg .spacer {
         height: 37em;
@@ -1724,7 +1860,7 @@ img.ornament {
     }
 }
 
-@media screen and ( min-width: 701px ) {
+@media screen and (min-width: 701px) {
     #commentary .columns {
         display: grid;
         grid-template-columns: 7em 1fr;
@@ -1740,174 +1876,173 @@ img.ornament {
 
 #physContainer {
     pointer-events: none;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 9001;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9001;
 }
 
 #physCanvas {
-    position: fixed;     /* Keeps the canvas fixed in place */
+    position: fixed; /* Keeps the canvas fixed in place */
     top: 0;
     left: 0;
-    width: 100vw;        /* Full viewport width */
-    height: 100vh;       /* Full viewport height */
-    z-index: 10000;       /* Puts canvas on top of other content */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: 10000; /* Puts canvas on top of other content */
 }
 
 body:not(.physDebugPhysics) #physCanvas {
-	visibility: hidden;
+    visibility: hidden;
 }
 
 .physElement {
-	pointer-events: all !important;
-	contain: layout;
+    pointer-events: all !important;
+    contain: layout;
 }
 
 .physPlaceholder,
 .physPlaceholder * {
-	pointer-events: none !important;
+    pointer-events: none !important;
 }
 
 .physElement.extractable {
-	transition: all 0.2s ease-out;
-	user-select: none;
-	-webkit-user-select: none; /* for safari */
+    transition: all 0.2s ease-out;
+    user-select: none;
+    -webkit-user-select: none; /* for safari */
 }
 
 .physElement.extractable:hover {
-	filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.3)) !important;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.3)) !important;
 }
 
 .physElement.extracted,
 .physElement.extracted * {
-	transition: none !important;
-	cursor: default !important;
+    transition: none !important;
+    cursor: default !important;
 }
 
 body.physGunEquipped .physElement.extracted,
 body.physGunEquipped .physElement.extracted * {
-	cursor: none !important;
+    cursor: none !important;
 }
 
 body:not(.physDebugPageElements) .physPlaceholder:not(.visiblePlaceholder),
 body:not(.physDebugPageElements) .physPlaceholder:not(.visiblePlaceholder) * {
-	visibility: hidden !important;
+    visibility: hidden !important;
 }
 
 body:not(.physDebugPageElements) .physElement.visiblePlaceholder,
 body:not(.physDebugPageElements) .physElement.visiblePlaceholder * {
-	visibility: hidden !important;
+    visibility: hidden !important;
 }
 
 body.physDebugPageElements .physPlaceholder {
-	opacity: 0.3 !important;
+    opacity: 0.3 !important;
 }
 
 .trashcan.physPlaceholder,
 .trashcan.physPlaceholder * {
-	visibility: visible !important;
+    visibility: visible !important;
 }
 
 body.physDebugPageElements .physElement:not(.extracted) {
-	outline: dotted 2px magenta;
+    outline: dotted 2px magenta;
 }
 
 .physMediaPlaceholder {
-	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAQSURBVBhXY/gPhBDwn+E/ABvyA/1Bas9NAAAAAElFTkSuQmCC') !important;
-	background-size: 20px 20px !important;
-	image-rendering: pixelated !important;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAQSURBVBhXY/gPhBDwn+E/ABvyA/1Bas9NAAAAAElFTkSuQmCC") !important;
+    background-size: 20px 20px !important;
+    image-rendering: pixelated !important;
 }
 
 body.physGunEquipped * {
-	cursor: none !important;
+    cursor: none !important;
 }
 
 body.physHasPhysBodies {
-	user-select: none;
-	-webkit-user-select: none; /* for safari */
+    user-select: none;
+    -webkit-user-select: none; /* for safari */
 }
 
 .debugUI {
-	user-select: none;
-	-webkit-user-select: none; /* for safari */
-	width: calc(90vw);
-	margin-left: calc(-45vw + 50%);
-	margin-bottom: 2em;
+    user-select: none;
+    -webkit-user-select: none; /* for safari */
+    width: calc(90vw);
+    margin-left: calc(-45vw + 50%);
+    margin-bottom: 2em;
 }
 
-.debugUI input[type=text] {
-	width: 80%;
-	margin-right: 1ch;
+.debugUI input[type="text"] {
+    width: 80%;
+    margin-right: 1ch;
 }
 
 .debugUI ul {
-	list-style-type: none;
-	margin-bottom: 1em;
+    list-style-type: none;
+    margin-bottom: 1em;
 }
 
 .debugUI li {
-	margin: 3px;
-	display: inline-block;
+    margin: 3px;
+    display: inline-block;
 }
 
 body:not(.showPhysDebugUI) #physdebug {
-	display: none;
+    display: none;
 }
 
 body:not(.showSoundDebugUI) #sounddebug {
-	display: none;
+    display: none;
 }
 
 .can {
-	height: 54px;
-	width: auto;
-	position: absolute;
-	filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+    height: 54px;
+    width: auto;
+    position: absolute;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
 }
 
 .can.intrash1,
 .can.intrash2 {
-	bottom: 10px;
+    bottom: 10px;
 }
 
 .can.intrash1 {
-	bottom: 130px;
-	left: calc(var(--trash-width) * (-0.2));
-	height: 80px;
+    bottom: 130px;
+    left: calc(var(--trash-width) * (-0.2));
+    height: 80px;
 }
 
 .can.intrash2 {
-	bottom: 120px;
-	transform: rotate(90deg);
-	left: calc(var(--trash-width) * (-0.35));
+    bottom: 120px;
+    transform: rotate(90deg);
+    left: calc(var(--trash-width) * (-0.35));
 }
 
 #can {
-	bottom: 0;
-	right: -20px;
+    bottom: 0;
+    right: -20px;
 }
 
 .trashcan {
-	height: var(--trash-height);
-	width: var(--trash-width);
-	position: absolute;
-	bottom: 0;
-	left: calc(var(--trash-width) * (-0.6));
-	background-image: url('/images/halflife220/trashcan.png');
-	background-size: contain;
-	background-position-x: center;
-	background-position-y: bottom;
-	filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
-	user-select: none;
-	-webkit-user-select: none; /* for safari */
-	z-index: 9100 !important;
+    height: var(--trash-height);
+    width: var(--trash-width);
+    position: absolute;
+    bottom: 0;
+    left: calc(var(--trash-width) * (-0.6));
+    background-image: url("/images/halflife220/trashcan.png");
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: bottom;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+    user-select: none;
+    -webkit-user-select: none; /* for safari */
+    z-index: 9100 !important;
 }
 
-button.buy
-{
+button.buy {
     font-weight: 900;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -1928,30 +2063,26 @@ button.buy
 
 .buttonstack > a,
 .buttonstack > a:hover {
-	display: block;
-	text-decoration: none;
+    display: block;
+    text-decoration: none;
 }
 .buttonstack > a.download-offset {
-	margin-bottom: 2em;
+    margin-bottom: 2em;
 }
-.buttonstack button.buy
-{
-	margin-bottom: -1px;
-	padding: 15px 10px;
+.buttonstack button.buy {
+    margin-bottom: -1px;
+    padding: 15px 10px;
 }
-.series .buttonstack button.buy
-{
-	padding: 3px 11px 5px;
-	text-align: left;
+.series .buttonstack button.buy {
+    padding: 3px 11px 5px;
+    text-align: left;
 }
-.series .buttonstack button.buy h3 span
-{
-	font-size: 85%;
+.series .buttonstack button.buy h3 span {
+    font-size: 85%;
 }
 
-button.buy::before
-{
-    content: '';
+button.buy::before {
+    content: "";
     position: absolute;
     display: block;
     width: 120%;
@@ -1963,8 +2094,7 @@ button.buy::before
     transform: skew(-33deg, 0) translate(-110%);
     transition: transform 300ms;
 }
-button.buy h3
-{
+button.buy h3 {
     position: relative;
     display: block;
     z-index: 50;
@@ -1973,32 +2103,27 @@ button.buy h3
     font-size: 100%;
 }
 a:hover button.buy::before,
-a.physElement.extracted button.buy::before
-{
+a.physElement.extracted button.buy::before {
     transform: skew(-33deg, 0) translate(-10%);
 }
 a:hover button.buy,
-a.physElement.extracted button.buy
-{
+a.physElement.extracted button.buy {
     color: #fff;
     background-color: var(--accent);
     background-color: inherit;
 }
 
-button.buy.longtext
-{
+button.buy.longtext {
     padding-left: 30px;
     padding-right: 30px;
 }
-button.buy.topmargin
-{
+button.buy.topmargin {
     margin-top: 2em;
 }
-button.buy.twoline
-{
-	padding-top: 10px;
-	padding-bottom: 10px;
-	line-height: 150%;
+button.buy.twoline {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 150%;
 }
 
 @media (min-width: 700px) {
@@ -2013,8 +2138,7 @@ button.buy.twoline
     }
 }
 
-.inverted button.buy
-{
+.inverted button.buy {
     color: #fff;
     border-color: #fff;
 }
@@ -2022,12 +2146,10 @@ button.buy.twoline
 .inverted a:hover button.buy,
 a.inverted:hover button.buy,
 .inverted a.physElement.extracted button.buy,
-a.inverted.physElement.extracted button.buy
-{
+a.inverted.physElement.extracted button.buy {
     color: #121918;
 }
-.inverted button.buy::before
-{
+.inverted button.buy::before {
     background-color: #fff;
 }
 
@@ -2042,23 +2164,23 @@ section ul {
 }
 
 #mobilemessage {
-	color: var(--accent);
-	text-align: center;
-	font-size: 100%;
-	font-weight: 600;
-	margin-top: -1em;
-	pointer-events: none;
-	transition: opacity 0.3s ease-out;
-	line-height: 1em;
-	min-height: 1em;
+    color: var(--accent);
+    text-align: center;
+    font-size: 100%;
+    font-weight: 600;
+    margin-top: -1em;
+    pointer-events: none;
+    transition: opacity 0.3s ease-out;
+    line-height: 1em;
+    min-height: 1em;
 }
 
 #mobilemessage span {
-	display: none;
+    display: none;
 }
 
 body:not(.physGravGunMessage) #mobilemessage {
-	opacity: 0;
+    opacity: 0;
 }
 hr {
     display: block;
