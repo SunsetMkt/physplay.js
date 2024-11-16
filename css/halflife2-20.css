@@ -2012,7 +2012,6 @@ body:not(.showSoundDebugUI) #sounddebug {
 .can.intrash1 {
     bottom: 130px;
     left: calc(var(--trash-width) * (-0.2));
-    height: 80px;
 }
 
 .can.intrash2 {
