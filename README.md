@@ -1,6 +1,6 @@
 # physplay.js
 
-Playable Gravity Gun from Half-Life 2 20th Anniversary Page
+Playable Gravity Gun from [Half-Life 2 20th Anniversary Page](https://www.half-life.com/en/halflife2/20th).
 
 ## Credits
 
