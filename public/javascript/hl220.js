@@ -19,88 +19,88 @@ jQuery(document).ready(function($) {
 const soundEffectInfo = {
 	// Gravity gun
 	"holdloop": {
-		path: 'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/physcannon_hold_loop.mp3',
+		path: '/images/halflife220/Audio/physcannon_hold_loop.mp3',
 		volume: 0.2,
 		loop: true,
 	},
 	"select": {
-		path: 'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/physcannon_select.mp3',
+		path: '/images/halflife220/Audio/physcannon_select.mp3',
 		volume: 0.3,
 	},
 	"weaponswitch": {
-		path: 'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/physcannon_return.mp3',
+		path: '/images/halflife220/Audio/physcannon_return.mp3',
 		volume: 0.3,
 	},
 	"pickup": {
-		path: 'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/physcannon_pickup.mp3',
+		path: '/images/halflife220/Audio/physcannon_pickup.mp3',
 		volume: 0.3,
 	},
 	"open": {
-		path: 'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/physcannon_claws_open.mp3',
+		path: '/images/halflife220/Audio/physcannon_claws_open.mp3',
 		volume: 0.3,
 		stops: ["close"],
 	},
 	"close": {
-		path: 'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/physcannon_claws_close.mp3',
+		path: '/images/halflife220/Audio/physcannon_claws_close.mp3',
 		volume: 0.3,
 		stops: ["open"],
 	},
 	"drop": {
-		path: 'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/physcannon_drop.mp3',
+		path: '/images/halflife220/Audio/physcannon_drop.mp3',
 		volume: 0.3,
 	},
 	"dryfire": {
-		path: 'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/physcannon_dryfire.mp3',
+		path: '/images/halflife220/Audio/physcannon_dryfire.mp3',
 		volume: 0.3,
 	},
 
 	// Combine
 	"pickupthecan": {
 		paths: [
-			'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/pickupthecan1.mp3',
-			'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/pickupthecan2.mp3',
-			'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/pickupthecan3.mp3',
+			'/images/halflife220/Audio/pickupthecan1.mp3',
+			'/images/halflife220/Audio/pickupthecan2.mp3',
+			'/images/halflife220/Audio/pickupthecan3.mp3',
 		],
 		volume: 0.1,
 	},
 	"putitinthetrash": {
 		paths: [
-			'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/putitinthetrash1.mp3',
-			'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/putitinthetrash2.mp3',
+			'/images/halflife220/Audio/putitinthetrash1.mp3',
+			'/images/halflife220/Audio/putitinthetrash2.mp3',
 		],
 		volume: 0.1,
 		stops: ["pickupthecan"],
 	},
 	"allrightyoucango": {
-		path: 'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/allrightyoucango.mp3',
+		path: '/images/halflife220/Audio/allrightyoucango.mp3',
 		volume: 0.1,
 		stops: ["pickupthecan", "putitinthetrash"],
 	},
 	"chuckle": {
-		path: 'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/chuckle.mp3',
+		path: '/images/halflife220/Audio/chuckle.mp3',
 		volume: 0.08,
 	},
 	"help": {
-		path: 'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/help.mp3',
+		path: '/images/halflife220/Audio/help.mp3',
 		volume: 0.22,
 		delay: 150, // ms
 	},
 
 	// Advisor
 	"advisor": {
-		path: 'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/AdvisorScreenVx03.mp3',
+		path: '/images/halflife220/Audio/AdvisorScreenVx03.mp3',
 		volume: 0.2,
 	},
 
 	// Zombie
 	"zombie": {
-		path: 'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/zombie_die2.mp3',
+		path: '/images/halflife220/Audio/zombie_die2.mp3',
 		volume: 0.2,
 	},
 
 	// Antlion
 	"antlion": {
-		path: 'https://cdn.fastly.steamstatic.com/half-life.com/images/halflife220/Audio/antlion_pain1.mp3',
+		path: '/images/halflife220/Audio/antlion_pain1.mp3',
 		volume: 0.2,
 	},
 };

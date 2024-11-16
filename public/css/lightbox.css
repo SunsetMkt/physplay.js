@@ -74,7 +74,7 @@ body.lb-disable-scrolling {
   height: 1em;
   opacity: 0.5;
   margin: 0 auto;
-  background: url('https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/loading.gif') no-repeat;
+  background: url('/images/halflife25/loading.gif') no-repeat;
 }
 
 .lb-nav {
@@ -105,7 +105,7 @@ body.lb-disable-scrolling {
   width: 50%;
   left: 0;
   float: left;
-  background: url('https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/prev.png') left 48% no-repeat;
+  background: url('/images/halflife25/prev.png') left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.1s;
@@ -124,7 +124,7 @@ body.lb-disable-scrolling {
   width: 50%;
   right: 0;
   float: right;
-  background: url('https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/next.png') right 48% no-repeat;
+  background: url('/images/halflife25/next.png') right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.1s;
@@ -190,7 +190,7 @@ body.lb-disable-scrolling {
   float: right;
   width: 1em;
   height: 1em;
-  background: url('https://cdn.fastly.steamstatic.com/half-life.com/images/halflife25/close.png') top right no-repeat;
+  background: url('/images/halflife25/close.png') top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
