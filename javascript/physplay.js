@@ -27,7 +27,7 @@ const defaultPhysConfigValues = {
         "a",
         ".youtube-container",
     ].join(", "),
-    NeverDraggableSelector: ["[data-phys=none]", "footer.main_footer *"].join(
+    NeverDraggableSelector: ["[data-phys=none]", "div.gravgun-ground *"].join(
         ", "
     ),
     EnableTextBounds: true,
@@ -623,7 +623,7 @@ class PhysPlay {
 
     constructor() {
         this.elemPhysContainer = document.querySelector("#physContainer");
-        this.elemFooter = document.querySelector("footer.main_footer");
+        this.elemFooter = document.querySelector("div.gravgun-ground");
 
         this.config.onupdate = () => this.onConfigUpdate();
         this.onConfigUpdate();
