@@ -2,12 +2,12 @@
     width: 0px;
     height: 0px;
     visibility: hidden;
-    background-image: url("/images/physplay/gravgun-outline.png"),
-        url("/images/physplay/gravgun-inset.png"),
-        url("/images/physplay/gravgun-inset-hover.png"),
-        url("/images/physplay/gravgun-hover.png"),
-        url("/images/physplay/gravgun_vm_open.png"),
-        url("/images/physplay/gravgun_vm_close.png"), url();
+    background-image: url("physplay/image/gravgun-outline.png"),
+        url("physplay/image/gravgun-inset.png"),
+        url("physplay/image/gravgun-inset-hover.png"),
+        url("physplay/image/gravgun-hover.png"),
+        url("physplay/image/gravgun_vm_open.png"),
+        url("physplay/image/gravgun_vm_close.png"), url();
 }
 
 /* General Styles */
@@ -52,7 +52,7 @@
 }
 
 .gravgunimage {
-    background-image: url("/images/physplay/gravgun-outline.png");
+    background-image: url("physplay/image/gravgun-outline.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -66,16 +66,16 @@
 
 #gravgun.gravgunEquipped .gravgunimage,
 #gravgun .gravgunimage.equipped {
-    background-image: url("/images/physplay/gravgun-inset.png");
+    background-image: url("physplay/image/gravgun-inset.png");
 }
 
 #gravgun.gravgunEquipped .gravgunimage:hover,
 #gravgun .gravgunimage.equipped:hover {
-    background-image: url("/images/physplay/gravgun-inset-hover.png");
+    background-image: url("physplay/image/gravgun-inset-hover.png");
 }
 
 .gravgunimage:hover {
-    background-image: url("/images/physplay/gravgun-hover.png");
+    background-image: url("physplay/image/gravgun-hover.png");
     transition-duration: 0ms;
 }
 
@@ -109,7 +109,7 @@
 }
 
 body.physGravGunMessage .gravgunimage {
-    background-image: url("/images/physplay/gravgun-hover.png");
+    background-image: url("physplay/image/gravgun-hover.png");
     transition-duration: 0ms;
 }
 
@@ -267,7 +267,7 @@ body.physGravGunMessage .gravgunimage {
 
 .gravgunHeld::after {
     content: "";
-    background-image: url("/images/physplay/gravgun_vm_close.png");
+    background-image: url("physplay/image/gravgun_vm_close.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
@@ -280,7 +280,7 @@ body.physGravGunMessage .gravgunimage {
 }
 
 .gravgunHeld.hoveringOverItem::after {
-    background-image: url("/images/physplay/gravgun_vm_open.png");
+    background-image: url("physplay/image/gravgun_vm_open.png");
 }
 
 #physContainer {
@@ -440,7 +440,7 @@ body:not(.showSoundDebugUI) #sounddebug {
     position: absolute;
     bottom: 0;
     left: calc(var(--trash-width) * (-0.6));
-    background-image: url("/images/physplay/trashcan.png");
+    background-image: url("physplay/image/trashcan.png");
     background-size: contain;
     background-position-x: center;
     background-position-y: bottom;
