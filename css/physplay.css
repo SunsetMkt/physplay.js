@@ -1,8 +1,3 @@
-body {
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-}
-
 #preloadImages {
     width: 0px;
     height: 0px;
@@ -18,68 +13,11 @@ body {
 /* General Styles */
 
 :root {
-    --header-height: 0;
-    --header-shadow-opacity: 0;
-    --page-bg: #fff;
-    --inverted-bg: #000;
-    --text: #000;
-    --text-inverted: #fff;
-    --accent: #ff862c;
-    --padding-side: 4vw;
-    --width-min-content: 700px;
-    --width-min-content-1: 701px;
-    --width-max-content: 1200px;
-    --width-max-content-1: 1201px;
-    --width-inner-content: 860px;
-    --width-inner-content-1: 861px;
-    --blockpad: 1.6em;
-    --mainpadtop: 4em;
-    --width-wall-max: 1190px;
-    --crowbar-height: 30em;
-    --crowbar-left-margin: 15em;
     --trash-height: 250px;
     --trash-width: calc(234 / 328 * var(--trash-height));
 }
 
-html {
-    height: 100%;
-}
-
-body {
-    width: 100%;
-    overflow-x: hidden;
-}
-
-/* GRID STYLES */
-
-section {
-    background-color: transparent;
-    margin: 0 auto;
-    position: relative;
-}
-
-.inner {
-    max-width: var(--width-inner-content);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* PAGE STYLES */
-
-body {
-    background-color: var(--page-bg);
-}
-
-/* FOOTER */
-
-footer.main_footer {
-    background: var(--inverted-bg);
-}
-
-footer.main_footer .main_footer_inner_wrapper {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-}
+/* gravgun */
 
 .youtube-container.physElement.extracted {
     padding: 0 !important;
@@ -96,12 +34,14 @@ footer.main_footer .main_footer_inner_wrapper {
     bottom: 0;
 }
 
-#maincontent #gravgun {
+#gravgun {
     margin: auto;
     width: 90%;
     max-width: 90%;
     margin-top: 4em;
     padding-bottom: 8em;
+    background-color: transparent;
+    position: relative;
 }
 
 .gravgunimage {
@@ -504,7 +444,6 @@ body:not(.showSoundDebugUI) #sounddebug {
 }
 
 #mobilemessage {
-    color: var(--accent);
     text-align: center;
     font-size: 100%;
     font-weight: 600;
